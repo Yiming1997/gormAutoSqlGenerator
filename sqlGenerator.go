@@ -8,7 +8,7 @@ const (
 	MysqlGenerator GeneratorType = 1 << iota
 )
 
-func NewCacheTable(t GeneratorType, db *gorm.DB) ISqlGenerator {
+func NewSqlGenerator(t GeneratorType, db *gorm.DB) ISqlGenerator {
 	switch t {
 	case MysqlGenerator:
 		return NewMyGenerator(db)
