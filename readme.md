@@ -5,7 +5,7 @@ gormAutoSqlGenerator  用在使用gorm的项目中，可以根据代码中定义
 gorm官方库目前不支持预生成迁移sql,这对于code first开发思想的团队是一件非常苦恼的事情，所以我决定使用gorm库的部分源码来把预生成sql的功能开发出来。  
  
  # Usage
- 
+ go get github.com/Yiming1997/gormAutoSqlGenerator
 ```
 import (  
  "fmt"  
